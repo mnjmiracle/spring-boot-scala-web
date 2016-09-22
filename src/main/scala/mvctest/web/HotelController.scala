@@ -10,13 +10,14 @@ import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.{PathVariable, RequestMapping, RequestMethod}
+import javax.servlet.http.HttpSession
 
 @Controller
 @RequestMapping(Array("/hotels"))
 class HotelController @Autowired()(private val hotelRepository: HotelRepository) {
 
   @RequestMapping(method = Array(RequestMethod.GET))
-  def list(model: Model) = {
+  def list(model: Model, session: HttpSession) = {
     val hotels = hotelRepository.findAll()
     model.addAttribute("hotels", hotels)
     "hotels/list"
