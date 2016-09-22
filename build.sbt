@@ -16,5 +16,7 @@ libraryDependencies ++= Seq(
   "org.hibernate" % "hibernate-validator" % "5.0.2.Final",
   "nz.net.ultraq.thymeleaf" % "thymeleaf-layout-dialect" % "1.2.1",
   "org.hsqldb" % "hsqldb" % "2.3.1",
-  "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided"
+  "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
+  "org.springframework.session" % "spring-session" % "1.2.2.RELEASE",
+  "org.springframework.boot" % "spring-boot-starter-redis" % "1.3.2.RELEASE"
 )
