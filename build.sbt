@@ -2,11 +2,11 @@ name := "spring-boot-scala-web"
 
 version := "1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 sbtVersion := "0.13.9"
 
-enablePlugins(TomcatPlugin)
+enablePlugins(JavaAppPackaging)
 
 libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-web" % "1.3.2.RELEASE",
